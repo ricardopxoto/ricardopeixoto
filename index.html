@@ -1,631 +1,317 @@
-Com certeza, Dr. Ricardo.
-
-Aqui está o arquivo HTML completo e atualizado, contendo todas as informações de identificação (CRM/RQE), currículo, procedimentos com ilustrações, os locais de atendimento em consultório e a lista de hospitais em ordem alfabética (incluindo as correções do **Hospital Aeroporto** e **Hospital Fundação Bahiana de Cardiologia**), além de usar a **Paleta de Cores 2 (Contemporâneo Mínimo)** que você escolheu.
-
-Clique no link abaixo para baixar o arquivo:
-
-[file-tag: code-generated-file-54af5d43-24be-4f51-b054-9ea071ae7539]
-
----
-
-### Passo a Passo para Publicar o Site no GitHub
-
-Como este é o arquivo final e corrigido, siga estes passos para garantir que ele substitua a versão antiga no seu repositório do GitHub e o site fique online com o conteúdo correto:
-
-1. **Baixe o arquivo** `index.html` através do link acima.
-2. Acesse o seu repositório no GitHub: `[github.com/ricardopxoto/ricardopeixoto](https://github.com/ricardopxoto/ricardopeixoto)`.
-3. Clique no botão **Add file** (perto do botão verde '<> Code') e selecione a opção **Upload files**.
-4. Arraste o arquivo `index.html` que você acabou de baixar do seu computador e solte-o dentro da área pontilhada no GitHub.
-5. Role a página para baixo e clique no botão verde que diz **Commit changes**.
-
-**Parabéns!** O seu site profissional está atualizado e online. O GitHub Pages levará de 1 a 5 minutos para processar a alteração. Após esse tempo, você pode acessar `drricardopeixoto.com` (ou o subdomínio do GitHub correspondente) para visualizar o resultado final.
-
-```
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: 'Plus Jakarta Sans', sans-serif;
-        color: var(--text-dark);
-        background-color: var(--bg-light);
-        line-height: 1.6;
-    }
-
-    h1, h2, h3, h4 {
-        font-family: 'Playfair Display', serif;
-        color: var(--primary);
-    }
-
-    /* Header & Nav */
-    header {
-        background-color: var(--white);
-        box-shadow: 0 2px 10px rgba(0,0,0,0.02);
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-    }
-
-    .nav-container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 1rem 2rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .logo {
-        text-decoration: none;
-    }
-
-    .logo-title {
-        font-size: 1.4rem;
-        font-weight: 700;
-        color: var(--primary);
-        letter-spacing: 1px;
-    }
-
-    .logo-subtitle {
-        font-size: 0.8rem;
-        color: var(--accent);
-        text-transform: uppercase;
-        letter-spacing: 1.5px;
-        font-weight: 600;
-    }
-
-    nav ul {
-        display: flex;
-        list-style: none;
-        gap: 1.8rem;
-    }
-
-    nav a {
-        text-decoration: none;
-        color: var(--text-dark);
-        font-weight: 500;
-        font-size: 0.95rem;
-        transition: color 0.3s;
-    }
-
-    nav a:hover, nav a.active {
-        color: var(--accent);
-    }
-
-    .btn-header {
-        background-color: var(--primary);
-        color: var(--white);
-        padding: 0.6rem 1.2rem;
-        border-radius: 6px;
-        text-decoration: none;
-        font-weight: 600;
-        font-size: 0.9rem;
-        transition: background 0.3s;
-    }
-
-    .btn-header:hover {
-        background-color: var(--primary-light);
-        color: var(--white);
-    }
-
-    /* Hero Section */
-    .hero {
-        background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
-        color: var(--white);
-        padding: 5rem 2rem;
-        text-align: center;
-        position: relative;
-    }
-
-    .hero-content {
-        max-width: 900px;
-        margin: 0 auto;
-    }
-
-    .hero h1 {
-        color: var(--white);
-        font-size: 2.8rem;
-        margin-bottom: 0.5rem;
-    }
-
-    .hero-subtitle {
-        font-size: 1.2rem;
-        color: var(--accent);
-        margin-bottom: 1.5rem;
-        font-weight: 500;
-    }
-
-    .hero-badges {
-        display: flex;
-        justify-content: center;
-        gap: 1.5rem;
-        flex-wrap: wrap;
-        margin-bottom: 2rem;
-    }
-
-    .badge {
-        background: rgba(255, 255, 255, 0.05);
-        padding: 0.4rem 1rem;
-        border-radius: 20px;
-        font-size: 0.85rem;
-        backdrop-filter: blur(5px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    .cta-buttons {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-    }
-
-    .btn-primary {
-        background-color: var(--accent);
-        color: var(--white);
-        padding: 0.8rem 1.8rem;
-        border-radius: 6px;
-        text-decoration: none;
-        font-weight: 600;
-        display: inline-block;
-        transition: background 0.3s;
-    }
-
-    .btn-primary:hover {
-        background-color: var(--accent-hover);
-    }
-
-    .btn-secondary {
-        border: 2px solid var(--white);
-        color: var(--white);
-        padding: 0.8rem 1.8rem;
-        border-radius: 6px;
-        text-decoration: none;
-        font-weight: 600;
-        display: inline-block;
-        transition: all 0.3s;
-    }
-
-    .btn-secondary:hover {
-        background: var(--white);
-        color: var(--primary);
-    }
-
-    /* Container & Sections */
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 4rem 2rem;
-    }
-
-    .section-title {
-        text-align: center;
-        font-size: 2.2rem;
-        margin-bottom: 1rem;
-        position: relative;
-    }
-
-    .section-subtitle {
-        text-align: center;
-        color: var(--text-muted);
-        max-width: 700px;
-        margin: 0 auto 3rem auto;
-        font-size: 1.05rem;
-    }
-
-    .section-title::after {
-        content: '';
-        display: block;
-        width: 60px;
-        height: 3px;
-        background-color: var(--accent);
-        margin: 0.8rem auto 0 auto;
-    }
-
-    /* Cards Layout */
-    .grid-2 {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        gap: 2rem;
-    }
-
-    .grid-3 {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 2rem;
-    }
-
-    .card {
-        background: var(--white);
-        border-radius: 12px;
-        padding: 2rem;
-        box-shadow: var(--card-shadow);
-        border: 1px solid var(--border);
-        transition: transform 0.3s;
-    }
-
-    .card:hover {
-        transform: translateY(-5px);
-    }
-
-    /* Curriculum & Registration */
-    .info-card {
-        background: var(--white);
-        border-radius: 12px;
-        padding: 2.5rem;
-        box-shadow: var(--card-shadow);
-        border-top: 4px solid var(--accent);
-    }
-
-    .info-list {
-        list-style: none;
-        margin-top: 1.5rem;
-    }
-
-    .info-list li {
-        padding: 0.8rem 0;
-        border-bottom: 1px solid var(--border);
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .info-list li:last-child {
-        border-bottom: none;
-    }
-
-    .icon-check {
-        color: var(--accent);
-        font-weight: bold;
-    }
-
-    /* Hospitals Section */
-    .hospital-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        gap: 1.5rem;
-    }
-
-    .hospital-item {
-        background: var(--white);
-        padding: 1.5rem;
-        border-radius: 8px;
-        box-shadow: var(--card-shadow);
-        border-left: 4px solid var(--primary);
-        font-weight: 600;
-        color: var(--primary);
-        display: flex;
-        align-items: center;
-        gap: 12px;
-    }
-
-    /* Consultórios */
-    .clinic-card {
-        background: var(--white);
-        border-radius: 12px;
-        padding: 2rem;
-        box-shadow: var(--card-shadow);
-        border: 1px solid var(--border);
-    }
-
-    .clinic-card h3 {
-        margin-bottom: 1rem;
-        color: var(--primary);
-    }
-
-    .clinic-detail {
-        margin-bottom: 0.8rem;
-        color: var(--text-dark);
-        display: flex;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    /* Procedures Section */
-    .procedure-card {
-        background: var(--white);
-        border-radius: 12px;
-        overflow: hidden;
-        box-shadow: var(--card-shadow);
-        border: 1px solid var(--border);
-        display: flex;
-        flex-direction: column;
-    }
-
-    .procedure-img {
-        background-color: #f7fafc;
-        height: 180px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1rem;
-    }
-
-    .procedure-body {
-        padding: 1.5rem;
-        flex-grow: 1;
-    }
-
-    .procedure-body h3 {
-        font-size: 1.2rem;
-        margin-bottom: 0.8rem;
-        color: var(--primary);
-    }
-
-    /* Interactive Tabs */
-    .tab-buttons {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
-        margin-bottom: 2rem;
-        border-bottom: 2px solid var(--border);
-        padding-bottom: 1rem;
-    }
-
-    .tab-btn {
-        background: none;
-        border: none;
-        font-size: 1.1rem;
-        font-weight: 600;
-        padding: 0.5rem 1.5rem;
-        cursor: pointer;
-        color: var(--text-muted);
-        border-radius: 6px;
-        transition: all 0.3s;
-    }
-
-    .tab-btn.active {
-        background-color: var(--primary);
-        color: var(--white);
-    }
-
-    .tab-content {
-        display: none;
-    }
-
-    .tab-content.active {
-        display: block;
-    }
-
-    /* Contact & Card Digital Section */
-    .contact-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 3rem;
-        align-items: start;
-    }
-
-    .card-digital {
-        background: #1a202c;
-        color: #e2e8f0;
-        border-radius: 16px;
-        padding: 2.5rem;
-        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-        border: 1px solid #2d3748;
-    }
-
-    .card-header {
-        border-bottom: 1px solid #2d3748;
-        padding-bottom: 1.5rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .card-header h2 {
-        color: #ffffff;
-        font-size: 1.8rem;
-        letter-spacing: 2px;
-    }
-
-    .card-header p {
-        color: var(--accent);
-        font-size: 0.85rem;
-        letter-spacing: 1px;
-        margin-top: 5px;
-    }
-
-    .card-info {
-        font-size: 0.95rem;
-        line-height: 1.8;
-    }
-
-    .card-info-item {
-        margin-bottom: 1rem;
-        display: flex;
-        align-items: center;
-        gap: 12px;
-    }
-
-    .contact-form {
-        background: var(--white);
-        padding: 2.5rem;
-        border-radius: 12px;
-        box-shadow: var(--card-shadow);
-    }
-
-    .form-group {
-        margin-bottom: 1.2rem;
-    }
-
-    .form-group label {
-        display: block;
-        margin-bottom: 0.4rem;
-        font-weight: 600;
-        font-size: 0.9rem;
-    }
-
-    .form-control {
-        width: 100%;
-        padding: 0.8rem;
-        border: 1px solid var(--border);
-        border-radius: 6px;
-        font-family: inherit;
-    }
-
-    .form-control:focus {
-        outline: none;
-        border-color: var(--accent);
-    }
-
-    textarea.form-control {
-        resize: vertical;
-        min-height: 100px;
-    }
-
-    footer {
-        background-color: var(--primary);
-        color: var(--white);
-        text-align: center;
-        padding: 2rem;
-        margin-top: 4rem;
-        font-size: 0.9rem;
-    }
-
-    @media (max-width: 768px) {
-        .nav-container {
-            flex-direction: column;
-            gap: 1rem;
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Ricardo Peixoto | Cardiologia Intervencionista</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2d3748;
+            --primary-light: #4a5568;
+            --accent: #a0aec0;
+            --accent-hover: #718096;
+            --bg-light: #ffffff;
+            --text-dark: #1a202c;
+            --text-muted: #718096;
+            --border: #edf2f7;
+            --white: #ffffff;
+            --card-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.03), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
         }
-        .hero h1 {
-            font-size: 2rem;
-        }
-        .contact-container {
-            grid-template-columns: 1fr;
-        }
-        nav ul {
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-    }
-</style>
 
-```
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; color: var(--text-dark); background-color: var(--bg-light); line-height: 1.6; }
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; color: var(--primary); }
 
-```
-<!-- Header / Navigation -->
-<header>
-    <div class="nav-container">
-        <a href="#" class="logo">
-            <div class="logo-title">DR. RICARDO PEIXOTO</div>
-            <div class="logo-subtitle">Cardiologia Intervencionista</div>
-        </a>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#procedimentos">Atuação</a></li>
-                <li><a href="#locais">Locais</a></li>
-                <li><a href="#publicacoes">Casos & Atualizações</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-        <a href="#contato" class="btn-header">Agendar Consulta</a>
-    </div>
-</header>
+        header { background-color: var(--white); box-shadow: 0 2px 10px rgba(0,0,0,0.02); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
+        .logo-title { font-size: 1.4rem; font-weight: 700; color: var(--primary); letter-spacing: 1px; }
+        .logo-subtitle { font-size: 0.8rem; color: var(--accent); text-transform: uppercase; letter-spacing: 1.5px; font-weight: 600; }
+        nav ul { display: flex; list-style: none; gap: 1.8rem; }
+        nav a { text-decoration: none; color: var(--text-dark); font-weight: 500; font-size: 0.95rem; transition: color 0.3s; }
+        nav a:hover { color: var(--accent); }
+        .btn-header { background-color: var(--primary); color: var(--white); padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem; }
 
-<!-- Hero Section -->
-<section class="hero">
-    <div class="hero-content">
-        <h1>DR. RICARDO PEIXOTO</h1>
-        <div class="hero-subtitle">Especialista em Cardiologia Intervencionista</div>
-        <div class="hero-badges">
-            <span class="badge">CRM-BA 25911</span>
-            <span class="badge">RQE 15476 / 19049</span>
-            <span class="badge">SBC & SBHCI</span>
+        .hero { background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%); color: var(--white); padding: 5rem 2rem; text-align: center; }
+        .hero-content { max-width: 900px; margin: 0 auto; }
+        .hero h1 { color: var(--white); font-size: 2.8rem; margin-bottom: 0.5rem; }
+        .hero-subtitle { font-size: 1.2rem; color: var(--accent); margin-bottom: 1.5rem; font-weight: 500; }
+        .hero-badges { display: flex; justify-content: center; margin-bottom: 2rem; }
+        .badge { background: rgba(255, 255, 255, 0.08); padding: 0.5rem 1.2rem; border-radius: 20px; font-size: 0.9rem; border: 1px solid rgba(255, 255, 255, 0.15); }
+        .cta-buttons { display: flex; justify-content: center; gap: 1rem; }
+        .btn-primary { background-color: var(--accent); color: var(--white); padding: 0.8rem 1.8rem; border-radius: 6px; text-decoration: none; font-weight: 600; }
+        .btn-secondary { border: 2px solid var(--white); color: var(--white); padding: 0.8rem 1.8rem; border-radius: 6px; text-decoration: none; font-weight: 600; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 4rem 2rem; }
+        .section-title { text-align: center; font-size: 2.2rem; margin-bottom: 1rem; }
+        .section-subtitle { text-align: center; color: var(--text-muted); max-width: 700px; margin: 0 auto 3rem auto; font-size: 1.05rem; }
+        .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        
+        .profile-img-container { text-align: center; margin-bottom: 2.5rem; }
+        .profile-img { width: 180px; height: 180px; border-radius: 50%; object-fit: cover; border: 4px solid var(--accent); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+        .info-card { background: var(--white); border-radius: 12px; padding: 2.5rem; box-shadow: var(--card-shadow); border-top: 4px solid var(--accent); }
+        .info-list { list-style: none; margin-top: 1.5rem; }
+        .info-list li { padding: 0.8rem 0; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 10px; }
+        
+        .hospital-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 1.5rem; }
+        .hospital-item { background: var(--white); padding: 1.5rem; border-radius: 8px; box-shadow: var(--card-shadow); border-left: 4px solid var(--primary); font-weight: 600; color: var(--primary); display: flex; align-items: center; gap: 12px; }
+        
+        .clinic-card { background: var(--white); border-radius: 12px; padding: 2rem; box-shadow: var(--card-shadow); border: 1px solid var(--border); }
+        .clinic-detail { margin-bottom: 0.8rem; display: flex; gap: 10px; }
+
+        .procedure-card { background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: var(--card-shadow); border: 1px solid var(--border); }
+        .procedure-img { background-color: #f7fafc; height: 160px; display: flex; align-items: center; justify-content: center; padding: 1rem; }
+        .procedure-body { padding: 1.5rem; }
+
+        .tab-buttons { display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem; border-bottom: 2px solid var(--border); padding-bottom: 1rem; }
+        .tab-btn { background: none; border: none; font-size: 1.1rem; font-weight: 600; padding: 0.5rem 1.5rem; cursor: pointer; color: var(--text-muted); border-radius: 6px; }
+        .tab-btn.active { background-color: var(--primary); color: var(--white); }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        .contact-container { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+        .card-digital { background: #1a202c; color: #e2e8f0; border-radius: 16px; padding: 2.5rem; border: 1px solid #2d3748; }
+        .contact-form { background: var(--white); padding: 2.5rem; border-radius: 12px; box-shadow: var(--card-shadow); }
+        .form-group { margin-bottom: 1.2rem; }
+        .form-control { width: 100%; padding: 0.8rem; border: 1px solid var(--border); border-radius: 6px; }
+
+        footer { background-color: var(--primary); color: var(--white); text-align: center; padding: 2rem; margin-top: 4rem; }
+        @media (max-width: 768px) { .nav-container, .contact-container { flex-direction: column; grid-template-columns: 1fr; gap: 1.5rem; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="#" style="text-decoration:none;">
+                <div class="logo-title">DR. RICARDO PEIXOTO</div>
+                <div class="logo-subtitle">Cardiologia Intervencionista</div>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#procedimentos">Atuação</a></li>
+                    <li><a href="#locais">Locais</a></li>
+                    <li><a href="#publicacoes">Casos & Atualizações</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <a href="#contato" class="btn-header">Agendar Consulta</a>
         </div>
-        <p style="margin-bottom: 2rem; opacity: 0.9; max-width: 750px; margin-left: auto; margin-right: auto;">
-            Tratamento minimamente invasivo de doenças cardíacas estruturais e coronarianas via transcateter com excelência e inovação tecnológica.
-        </p>
-        <div class="cta-buttons">
-            <a href="#contato" class="btn-primary">Marcar Consulta</a>
-            <a href="#procedimentos" class="btn-secondary">Conhecer Procedimentos</a>
-        </div>
-    </div>
-</section>
+    </header>
 
-<!-- Sobre & Currículo -->
-<section id="sobre" class="container">
-    <h2 class="section-title">Perfil Profissional & Qualificações</h2>
-    <p class="section-subtitle">Compromisso com a medicina de alta complexidade, fundamentado em formação contínua e certificações de excelência.</p>
-
-    <div class="grid-2">
-        <div class="info-card">
-            <h3>Formação & Títulos</h3>
-            <ul class="info-list">
-                <li><span class="icon-check">✓</span> <strong>Especialista em Cardiologia</strong> – Sociedade Brasileira de Cardiologia (SBC)</li>
-                <li><span class="icon-check">✓</span> <strong>Especialista em Cardiologia Intervencionista</strong> – Sociedade Brasileira de Hemodinâmica e Cardiologia Intervencionista (SBHCI)</li>
-                <li><span class="icon-check">✓</span> <strong>Certificado TAVI</strong> – Habilitação em Implante Valvar Aórtico Transcateter pela SBHCI</li>
-                <li><span class="icon-check">✓</span> <strong>Título de Terapia Intensiva</strong> – Associação de Medicina Intensiva Brasileira (AMIB)</li>
-                <li><span class="icon-check">✓</span> <strong>Pós-graduando em Medicina e Saúde Humana</strong> – Escola Bahiana de Medicina e Saúde Pública (EBMSP)</li>
-            </ul>
-        </div>
-
-        <div class="info-card">
-            <h3>Identificação Médica</h3>
-            <p style="margin-top: 1rem; color: var(--text-muted);">Registro de Qualificação de Especialista garantindo atendimento pautado pela ética, evidência científica e rigor regulatório.</p>
-            <div style="margin-top: 1.5rem; padding: 1.2rem; background: var(--bg-light); border-radius: 8px;">
-                <p style="margin-bottom: 0.5rem;"><strong>CRM (Bahia):</strong> 25911</p>
-                <p style="margin-bottom: 0.5rem;"><strong>RQE Cardiologia:</strong> 15476</p>
-                <p><strong>RQE Cardiologia Intervencionista:</strong> 19049</p>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>DR. RICARDO PEIXOTO</h1>
+            <div class="hero-subtitle">Especialista em Cardiologia Intervencionista</div>
+            <div class="hero-badges">
+                <span class="badge">CRM-BA 25911</span>
+            </div>
+            <p style="margin-bottom: 2rem; opacity: 0.9; max-width: 750px; margin-left: auto; margin-right: auto;">
+                Tratamento minimamente invasivo de doenças cardíacas estruturais e coronarianas via transcateter com excelência e inovação tecnológica.
+            </p>
+            <div class="cta-buttons">
+                <a href="#contato" class="btn-primary">Marcar Consulta</a>
+                <a href="#procedimentos" class="btn-secondary">Conhecer Procedimentos</a>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- O que é Cardiologia Intervencionista & Procedimentos -->
-<section id="procedimentos" style="background-color: #f7fafc; padding: 4rem 0;">
-    <div class="container" style="padding-top: 0; padding-bottom: 0;">
-        <h2 class="section-title">O que é a Cardiologia Intervencionista?</h2>
-        <p class="section-subtitle">
-            A Cardiologia Intervencionista é uma subespecialidade dedicada ao diagnóstico e tratamento de doenças cardíacas por meio de técnicas <strong>transcateter (minimamente invasivas)</strong>. Através de pequenos acessos vasculares (pela artéria radial ou femoral), introduzem-se cateteres finos até o coração, evitando a necessidade de cirurgias abertas com corte no tórax. Isso proporciona menor tempo de recuperação, menos dor pós-operatória e rápido retorno às atividades habituais.
-        </p>
+    <section id="sobre" class="container">
+        <!-- FOTO DE PERFIL -->
+        <div class="profile-img-container">
+            <img src="foto-dr-ricardo.png" alt="Dr. Ricardo Peixoto" class="profile-img">
+        </div>
 
-        <h3 style="text-align: center; font-size: 1.6rem; margin-top: 3rem; margin-bottom: 2rem;">Áreas de Atuação e Procedimentos</h3>
+        <h2 class="section-title">Perfil Profissional & Qualificações</h2>
+        <p class="section-subtitle">Compromisso com a medicina de alta complexidade, fundamentado em formação contínua e certificações de excelência.</p>
 
-        <div class="grid-3">
-            
-            <!-- 1. Cateterismo Cardíaco -->
-            <div class="procedure-card">
-                <div class="procedure-img">
-                    <svg width="100" height="100" viewBox="0 0 100 100">
-                        <path d="M50,20 C30,20 15,35 15,55 C15,75 40,85 50,95 C60,85 85,75 85,55 C85,35 70,20 50,20 Z" fill="none" stroke="#2d3748" stroke-width="4"/>
-                        <path d="M20,50 L45,50 L50,30 L55,70 L60,45 L65,50 L80,50" fill="none" stroke="#a0aec0" stroke-width="3"/>
-                    </svg>
+        <div class="grid-2">
+            <div class="info-card">
+                <h3>Formação & Títulos</h3>
+                <ul class="info-list">
+                    <li>✓ <strong>Especialista em Cardiologia</strong> – Sociedade Brasileira de Cardiologia (SBC)</li>
+                    <li>✓ <strong>Especialista em Cardiologia Intervencionista</strong> – Sociedade Brasileira de Hemodinâmica e Cardiologia Intervencionista (SBHCI)</li>
+                    <li>✓ <strong>Certificado TAVI</strong> – Habilitação em Implante Valvar Aórtico Transcateter pela SBHCI</li>
+                    <li>✓ <strong>Título de Terapia Intensiva</strong> – Associação de Medicina Intensiva Brasileira (AMIB)</li>
+                    <li>✓ <strong>Pós-graduando em Medicina e Saúde Humana</strong> – Escola Bahiana de Medicina e Saúde Pública (EBMSP)</li>
+                </ul>
+            </div>
+
+            <div class="info-card">
+                <h3>Identificação Médica</h3>
+                <p style="margin-top: 1rem; color: var(--text-muted);">Registro de Qualificação de Especialista garantindo atendimento pautado pela ética, evidência científica e rigor regulatório.</p>
+                <div style="margin-top: 1.5rem; padding: 1.2rem; background: #f7fafc; border-radius: 8px;">
+                    <p style="margin-bottom: 0.5rem;"><strong>CRM (Bahia):</strong> 25911</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>RQE Cardiologia:</strong> 15476</p>
+                    <p><strong>RQE Cardiologia Intervencionista:</strong> 19049</p>
                 </div>
-                <div class="procedure-body">
-                    <h3>Cateterismo Cardíaco</h3>
-                    <p>Exame diagnóstico invasivo que avalia as artérias coronárias e as pressões dentro das câmaras cardíacas, identificando obstruções, malformações ou disfunções com precisão milimétrica.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="procedimentos" style="background-color: #f7fafc; padding: 4rem 0;">
+        <div class="container">
+            <h2 class="section-title">O que é a Cardiologia Intervencionista?</h2>
+            <p class="section-subtitle">
+                Subespecialidade dedicada ao diagnóstico e tratamento de doenças cardíacas por meio de técnicas <strong>transcateter (minimamente invasivas)</strong>, evitando cirurgias abertas no tórax e proporcionando rápida recuperação.
+            </p>
+
+            <div class="grid-3">
+                <div class="procedure-card">
+                    <div class="procedure-img">
+                        <svg width="80" height="80" viewBox="0 0 100 100"><path d="M50,20 C30,20 15,35 15,55 C15,75 40,85 50,95 C60,85 85,75 85,55 C85,35 70,20 50,20 Z" fill="none" stroke="#2d3748" stroke-width="4"/><path d="M20,50 L45,50 L50,30 L55,70 L60,45 L65,50 L80,50" fill="none" stroke="#a0aec0" stroke-width="3"/></svg>
+                    </div>
+                    <div class="procedure-body">
+                        <h3>Cateterismo Cardíaco</h3>
+                        <p>Exame diagnóstico para avaliar artérias coronárias e pressões cardíacas com precisão.</p>
+                    </div>
+                </div>
+
+                <div class="procedure-card">
+                    <div class="procedure-img">
+                        <svg width="100" height="70" viewBox="0 0 120 80"><rect x="10" y="25" width="100" height="30" rx="5" fill="#e2e8f0" stroke="#2d3748" stroke-width="3"/><path d="M30,25 Q60,35 90,25 M30,55 Q60,45 90,55" fill="none" stroke="#a0aec0" stroke-width="4"/></svg>
+                    </div>
+                    <div class="procedure-body">
+                        <h3>Angioplastia com Stent</h3>
+                        <p>Desobstrução das artérias do coração com implante de stent para restaurar o fluxo sanguíneo.</p>
+                    </div>
+                </div>
+
+                <div class="procedure-card">
+                    <div class="procedure-img">
+                        <svg width="80" height="80" viewBox="0 0 100 100"><circle cx="50" cy="50" r="35" fill="none" stroke="#2d3748" stroke-width="4"/><polygon points="50,25 65,65 35,65" fill="none" stroke="#a0aec0" stroke-width="3"/></svg>
+                    </div>
+                    <div class="procedure-body">
+                        <h3>Tratamento TAVI</h3>
+                        <p>Substituição transcateter da valva aórtica calcificada sem cirurgia aberta.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="locais" class="container">
+        <h2 class="section-title">Locais de Atuação e Consultórios</h2>
+        
+        <h3 style="margin-bottom: 1.5rem; color: var(--primary);">Hospitais de Atuação (Ordem Alfabética)</h3>
+        <div class="hospital-grid" style="margin-bottom: 3.5rem;">
+            <div class="hospital-item">🏥 Hospital Aeroporto</div>
+            <div class="hospital-item">🏥 Hospital Aliança</div>
+            <div class="hospital-item">🏥 Hospital Cardiopulmonar</div>
+            <div class="hospital-item">🏥 Hospital da Bahia</div>
+            <div class="hospital-item">🏥 Hospital Fundação Bahiana de Cardiologia</div>
+            <div class="hospital-item">🏥 Hospital Mater Dei</div>
+            <div class="hospital-item">🏥 Hospital Português</div>
+            <div class="hospital-item">🏥 Hospital Santa Izabel</div>
+            <div class="hospital-item">🏥 Hospital São Rafael</div>
+        </div>
+
+        <h3 style="margin-bottom: 1.5rem; color: var(--primary);">Consultórios</h3>
+        <div class="grid-2">
+            <div class="clinic-card">
+                <h3>Clínica Cardiorritmo</h3>
+                <div class="clinic-detail">📍 Salvador - BA</div>
+                <div class="clinic-detail">🩺 Consultas e avaliações pré e pós-procedimentos.</div>
+            </div>
+
+            <div class="clinic-card">
+                <h3>Clínica do Coração Dr. João de Deus</h3>
+                <div class="clinic-detail">📍 Rua Professor Fernando São Paulo, 76, Ponto Central, Feira de Santana - BA</div>
+                <div class="clinic-detail">📞 (75) 98154-3513</div>
+                <div class="clinic-detail">✉️ ricardopxoto30@gmail.com</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="publicacoes" style="background-color: #f7fafc; padding: 4rem 0;">
+        <div class="container">
+            <h2 class="section-title">Central Científica</h2>
+            <div class="tab-buttons">
+                <button class="tab-btn active" onclick="openTab('atualizacoes')">Atualizações & Artigos</button>
+                <button class="tab-btn" onclick="openTab('casos')">Casos Clínicos Editados</button>
+            </div>
+
+            <div id="atualizacoes" class="tab-content active">
+                <div class="grid-2">
+                    <div class="clinic-card">
+                        <h4>Avanços na TAVI em Pacientes Jovens</h4>
+                        <p style="color:var(--text-muted); margin-top:0.5rem;">Análise das novas diretrizes sobre a durabilidade das próteses transcateter.</p>
+                    </div>
+                    <div class="clinic-card">
+                        <h4>Intervenções Tricúspides Percutâneas</h4>
+                        <p style="color:var(--text-muted); margin-top:0.5rem;">Novas abordagens minimamente invasivas para a valva tricúspide.</p>
+                    </div>
                 </div>
             </div>
 
-            <!-- 2. Angioplastia Coronariana -->
-            <div class="procedure-card">
-                <div class="procedure-img">
-                    <svg width="120" height="80" viewBox="0 0 120 80">
-                        <rect x="10" y="25" width="100" height="30" rx="5" fill="#e2e8f0" stroke="#2d3748" stroke-width="3"/>
-                        <path d="M30,25 Q60,35 90,25 M30,55 Q60,45 90,55" fill="none" stroke="#a0aec0" stroke-width="4"/>
-                        <circle cx="60" cy="40" r="12" fill="none" stroke="#a0aec0" stroke-width="3" stroke-dasharray="3,3"/>
-                    </svg>
-                </div>
-                <div class="procedure-body">
-                    <h3>Angioplastia Coronariana com Stent</h3>
-                    <p>Procedimento de desobstrução das artérias do coração utilizando um balão e a implantação de um stent (mola metálica recoberta com medicação) para restaurar o fluxo sanguíneo normal.</p>
+            <div id="casos" class="tab-content">
+                <div class="grid-2">
+                    <div class="clinic-card">
+                        <h4>TAVI Valve-in-Valve</h4>
+                        <p style="color:var(--text-muted); margin-top:0.5rem;">Tratamento transcateter de bioprótese aórtica degenerada.</p>
+                    </div>
+                    <div class="clinic-card">
+                        <h4>Oclusão Percutânea de FOP</h4>
+                        <p style="color:var(--text-muted); margin-top:0.5rem;">Fechamento de Forame Oval Patente pós-AVC criptogênico.</p>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
 
-            <!-- 3. TAVI -->
-            <div class="procedure-card">
-                <div class="procedure-img">
-                    <svg width="100" height="100" viewBox="0 0 100 100">
-                        <circle cx="50" cy="50" r="35" fill="none" stroke="#2d3748" stroke-width="4"/>
-                        <polygon points="50,25 65,65 35,65" fill="none" stroke="#a0aec0" stroke-width="3"/>
-                        <circle cx="50" cy="50" r="12" fill="#a0aec0" opacity="0.3"/>
-                    </svg>
-                </div>
-                <div class="procedure-body">
-                    <h3>Tratamento de Estenose Aórtica (TAVI)</h3>
-                    <p>Substituição transcateter da válvula aórtica calcificada por uma nova prótese, sem necessidade de cirurgia peitoral aberta nem parada cardíaca, ideal para pacientes idosos ou de alto risco.</p>
-                </div>
+    <section id="contato" class="container">
+        <h2 class="section-title">Agendamento & Contato</h2>
+        <div class="contact-container">
+            <div class="card-digital">
+                <h2>DR. RICARDO PEIXOTO</h2>
+                <p style="color:var(--accent); margin-bottom:1.5rem;">CARDIOLOGIA INTERVENCIONISTA</p>
+                <p style="margin-bottom:0.5rem;">📋 CRM-BA 25911 | RQE 15476 / 19049</p>
+                <p style="margin-bottom:0.5rem;">📞 (75) 98154-3513</p>
+                <p style="margin-bottom:0.5rem;">✉️ ricardopxoto30@gmail.com</p>
+                <p style="margin-bottom:0.5rem;">📍 Feira de Santana - BA</p>
+                <p>📸 Instagram: @ricardopxoto</p>
             </div>
 
-            <!-- 4. Insuficiência Mitral
+            <div class="contact-form">
+                <h3 style="margin-bottom: 1rem;">Solicitar Agendamento</h3>
+                <form onsubmit="alert('Solicitação enviada!'); return false;">
+                    <div class="form-group">
+                        <label>Nome Completo</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Telefone / WhatsApp</label>
+                        <input type="tel" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Local Preferencial</label>
+                        <select class="form-control">
+                            <option>Clínica Cardiorritmo - Salvador</option>
+                            <option>Clínica Dr. João de Deus - Feira de Santana</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width:100%; border:none; cursor:pointer;">Enviar Solicitação</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-```
+    <footer>
+        <p>&copy; 2026 Dr. Ricardo Peixoto - CRM-BA 25911</p>
+    </footer>
+
+    <script>
+        function openTab(tabName) {
+            document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(tabName).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
