@@ -36,6 +36,10 @@
 
         .hero { background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%); color: var(--white); padding: 5rem 2rem; text-align: center; }
         .hero-content { max-width: 900px; margin: 0 auto; }
+        
+        /* Foto na Página Inicial (Hero) */
+        .hero-img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent); margin-bottom: 1.5rem; box-shadow: 0 8px 25px rgba(0,0,0,0.3); }
+
         .hero h1 { color: var(--white); font-size: 2.8rem; margin-bottom: 0.5rem; }
         .hero-subtitle { font-size: 1.2rem; color: var(--accent); margin-bottom: 1.5rem; font-weight: 500; }
         .hero-badges { display: flex; justify-content: center; margin-bottom: 2rem; }
@@ -104,8 +108,10 @@
         </div>
     </header>
 
+    <!-- PÁGINA INICIAL (HERO) COM A FOTO -->
     <section class="hero">
         <div class="hero-content">
+            <img src="foto-dr-ricardo.png" alt="Dr. Ricardo Peixoto" class="hero-img">
             <h1>DR. RICARDO PEIXOTO</h1>
             <div class="hero-subtitle">Especialista em Cardiologia Intervencionista</div>
             <div class="hero-badges">
@@ -122,11 +128,6 @@
     </section>
 
     <section id="sobre" class="container">
-        <!-- FOTO DE PERFIL -->
-        <div class="profile-img-container">
-            <img src="foto-dr-ricardo.png" alt="Dr. Ricardo Peixoto" class="profile-img">
-        </div>
-
         <h2 class="section-title">Perfil Profissional & Qualificações</h2>
         <p class="section-subtitle">Compromisso com a medicina de alta complexidade, fundamentado em formação contínua e certificações de excelência.</p>
 
