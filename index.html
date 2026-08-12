@@ -342,22 +342,31 @@
     <section id="publicacoes" style="background-color: #f7fafc; padding: 4rem 0;">
         <div class="container">
             <h2 class="section-title">Central Científica</h2>
-            <p class="section-subtitle">Em breve: artigos, atualizações científicas e relatos de casos clínicos.</p>
+            <p class="section-subtitle">Publicações, artigos científicos e relatos de casos em cardiologia intervencionista.</p>
             
             <div class="tab-buttons">
                 <button class="tab-btn active" onclick="openTab('atualizacoes')">Atualizações & Artigos</button>
                 <button class="tab-btn" onclick="openTab('casos')">Casos Clínicos Editados</button>
             </div>
 
+            <!-- Aba 1: Artigos -->
             <div id="atualizacoes" class="tab-content active">
-                <div style="text-align: center; color: var(--text-muted); padding: 2rem; background: var(--white); border-radius: 12px; border: 1px dashed var(--border);">
-                    <p>Nenhum artigo publicado no momento. Conteúdo em breve.</p>
+                <div class="grid-2">
+                    <div class="clinic-card">
+                        <span style="font-size: 0.8rem; background-color: #e2e8f0; color: var(--primary); padding: 0.2rem 0.6rem; border-radius: 4px; font-weight: 600; text-transform: uppercase;">Publicação JOTCI</span>
+                        <h4 style="margin-top: 0.8rem; font-size: 1.1rem; color: var(--primary);">Journal of Transcatheter Interventions</h4>
+                        <p style="color:var(--text-muted); margin-top:0.5rem; font-size: 0.95rem;">
+                            Artigo científico publicado na revista oficial da Sociedade Brasileira de Hemodinâmica e Cardiologia Intervencionista (SBHCI).
+                        </p>
+                        <a href="https://jotci.org/wp-content/uploads/articles_xml/2595-4350-jotci-29-eA20200024/2595-4350-jotci-29-eA20200024-pt.pdf" target="_blank" class="btn-primary" style="display: inline-block; margin-top: 1rem; padding: 0.5rem 1rem; font-size: 0.85rem; text-decoration: none;">Acessar PDF da Publicação ↗</a>
+                    </div>
                 </div>
             </div>
 
+            <!-- Aba 2: Casos Clínicos -->
             <div id="casos" class="tab-content">
                 <div style="text-align: center; color: var(--text-muted); padding: 2rem; background: var(--white); border-radius: 12px; border: 1px dashed var(--border);">
-                    <p>Nenhum caso clínico publicado no momento. Conteúdo em breve.</p>
+                    <p>Casos clínicos editados em breve.</p>
                 </div>
             </div>
         </div>
