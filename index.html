@@ -38,7 +38,16 @@
         .hero-content { max-width: 900px; margin: 0 auto; }
         
         /* Foto na Página Inicial (Hero) */
-        .hero-img { width: 160px; height: 160px; border-radius: 50%; object-fit: cover; border: 3px solid var(--accent); margin-bottom: 1.5rem; box-shadow: 0 8px 25px rgba(0,0,0,0.3); }
+        .hero-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent);
+    display: block;
+    margin: 0 auto 1.5rem auto; /* Centraliza a imagem horizontalmente */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
 
         .hero h1 { color: var(--white); font-size: 2.8rem; margin-bottom: 0.5rem; }
         .hero-subtitle { font-size: 1.2rem; color: var(--accent); margin-bottom: 1.5rem; font-weight: 500; }
@@ -350,7 +359,7 @@
             </div>
         </div>
     </section>
-    
+
     <section id="locais" class="container">
         <h2 class="section-title">Locais de Atuação e Consultórios</h2>
         
