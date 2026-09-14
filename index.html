@@ -72,9 +72,19 @@
         .clinic-card { background: var(--white); border-radius: 12px; padding: 2rem; box-shadow: var(--card-shadow); border: 1px solid var(--border); }
         .clinic-detail { margin-bottom: 0.8rem; display: flex; gap: 10px; }
 
-        .procedure-card { background: var(--white); border-radius: 12px; overflow: hidden; box-shadow: var(--card-shadow); border: 1px solid var(--border); }
-        .procedure-img { background-color: #f7fafc; height: 180px; overflow: hidden; display: flex; align-items: center; justify-content: center; }
-        .procedure-body { padding: 1.5rem; }
+        .procedure-card { 
+            background: var(--white); 
+            border-radius: 12px; 
+            box-shadow: var(--card-shadow); 
+            border: 1px solid var(--border); 
+            border-top: 3px solid var(--accent);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .procedure-body { padding: 2rem; }
+        .procedure-body h3 { font-size: 1.25rem; margin-bottom: 0.8rem; }
+        .procedure-body p { color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; }
 
         .tab-buttons { display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem; border-bottom: 2px solid var(--border); padding-bottom: 1rem; }
         .tab-btn { background: none; border: none; font-size: 1.1rem; font-weight: 600; padding: 0.5rem 1.5rem; cursor: pointer; color: var(--text-muted); border-radius: 6px; }
@@ -170,9 +180,6 @@
                 
                 <!-- 1. Cateterismo Cardíaco -->
                 <div class="procedure-card">
-                    <div class="procedure-img">
-                        <img src="cateterismo-e.jpg" alt="Cateterismo Cardíaco" style="width:100%; height:100%; object-fit:cover;">
-                    </div>
                     <div class="procedure-body">
                         <h3>Cateterismo Cardíaco</h3>
                         <p>Exame diagnóstico invasivo que introduz cateteres finos até o coração para mapear a anatomia das artérias coronárias e identificar obstruções com contraste radiológico.</p>
@@ -181,9 +188,6 @@
 
                 <!-- 2. Cateterismo Cardíaco Direito -->
                 <div class="procedure-card">
-                    <div class="procedure-img">
-                        <img src="cateterismo-d.jpg" alt="Cateterismo Cardíaco Direito" style="width:100%; height:100%; object-fit:cover;">
-                    </div>
                     <div class="procedure-body">
                         <h3>Cateterismo Cardíaco Direito</h3>
                         <p>Avaliação hemodinâmica das câmaras direitas do coração e da artéria pulmonar, medindo pressões e débito cardíaco para investigação de hipertensão pulmonar e insuficiência cardíaca.</p>
@@ -192,9 +196,6 @@
 
                 <!-- 3. Angioplastia Coronariana -->
                 <div class="procedure-card">
-                    <div class="procedure-img">
-                        <img src="angioplastia.jpg" alt="Angioplastia Coronariana" style="width:100%; height:100%; object-fit:cover;">
-                    </div>
                     <div class="procedure-body">
                         <h3>Angioplastia Coronariana</h3>
                         <p>Tratamento percutâneo utilizando materiais específicos para preparo de placa e implante de stent coronário ou balão farmacológico, restaurando o fluxo sanguíneo da artéria.</p>
@@ -203,9 +204,6 @@
 
                 <!-- 4. Implante Transcateter de Válvula Aórtica (TAVI) -->
                 <div class="procedure-card">
-                    <div class="procedure-img">
-                        <img src="tavi.jpg" alt="TAVI" style="width:100%; height:100%; object-fit:cover;">
-                    </div>
                     <div class="procedure-body">
                         <h3>Implante Transcateter de Válvula Aórtica (TAVI)</h3>
                         <p>Substituição da valva aórtica estenosada por uma nova prótese biológica guiada por cateter via artéria femoral, sem necessidade de parada cardíaca ou abertura do tórax.</p>
@@ -214,9 +212,6 @@
 
                 <!-- 5. Reparo Mitral Borda-a-Borda -->
                 <div class="procedure-card">
-                    <div class="procedure-img">
-                        <img src="reparo-mitral.jpg" alt="Reparo Mitral Borda-a-Borda" style="width:100%; height:100%; object-fit:cover;">
-                    </div>
                     <div class="procedure-body">
                         <h3>Reparo Mitral Borda-a-Borda</h3>
                         <p>Tratamento da insuficiência mitral grave através do posicionamento de um clipe transcateter que une as bordas dos folhetos valvares, reduzindo o refluxo de sangue.</p>
@@ -225,9 +220,6 @@
 
                 <!-- 6. Valvuloplastia por Balão -->
                 <div class="procedure-card">
-                    <div class="procedure-img">
-                        <img src="valvuloplastia.jpg" alt="Valvuloplastia por Balão" style="width:100%; height:100%; object-fit:cover;">
-                    </div>
                     <div class="procedure-body">
                         <h3>Valvuloplastia por Balão</h3>
                         <p>Dilatação mecânica de válvulas cardíacas estreitadas (mitral ou aórtica) através da insuflação controlada de um balão especial inserido por cateterismo.</p>
@@ -236,9 +228,6 @@
 
                 <!-- 7. Fechamento de Leak Perivalvar -->
                 <div class="procedure-card">
-                    <div class="procedure-img">
-                        <img src="leak-perivalvar.jpg" alt="Fechamento de Leak Perivalvar" style="width:100%; height:100%; object-fit:cover;">
-                    </div>
                     <div class="procedure-body">
                         <h3>Fechamento de Leak Perivalvar</h3>
                         <p>Correção percutânea de vazamentos ao redor de próteses valvares cirúrgicas antigas, implantando pequenos dispositivos oclusores para vedar o orifício residual.</p>
@@ -247,9 +236,6 @@
 
                 <!-- 8. Intervenções em Válvula Tricúspide -->
                 <div class="procedure-card">
-                    <div class="procedure-img">
-                        <img src="tricuspide.jpg" alt="Intervenções em Válvula Tricúspide" style="width:100%; height:100%; object-fit:cover;">
-                    </div>
                     <div class="procedure-body">
                         <h3>Intervenções em Válvula Tricúspide</h3>
                         <p>Procedimentos minimamente invasivos (reparo com clipe ou substituição valvar percutânea) para tratar o refluxo grave na valva tricúspide e aliviar sintomas sistêmicos.</p>
@@ -258,9 +244,6 @@
 
                 <!-- 9. Fechamento de Comunicação Interatrial (CIA) -->
                 <div class="procedure-card">
-                    <div class="procedure-img">
-                        <img src="cia.jpg" alt="Fechamento de CIA" style="width:100%; height:100%; object-fit:cover;">
-                    </div>
                     <div class="procedure-body">
                         <h3>Fechamento de Comunicação Interatrial (CIA)</h3>
                         <p>Oclusão de um defeito congênito no septo entre os átrios por meio do implante de uma prótese de duplo disco, normalizando o fluxo sanguíneo entre as cavidades.</p>
@@ -269,9 +252,6 @@
 
                 <!-- 10. Fechamento de Forame Oval Patente (FOP) -->
                 <div class="procedure-card">
-                    <div class="procedure-img">
-                        <img src="fop.jpg" alt="Fechamento de FOP" style="width:100%; height:100%; object-fit:cover;">
-                    </div>
                     <div class="procedure-body">
                         <h3>Fechamento de Forame Oval Patente (FOP)</h3>
                         <p>Implante transcateter de prótese oclusora para selar a abertura entre os átrios que permaneceu após o nascimento, prevenindo novos episódios de AVC embólico.</p>
@@ -280,9 +260,6 @@
 
                 <!-- 11. VIV Aórtico (Valve-in-Valve Aórtico) -->
                 <div class="procedure-card">
-                    <div class="procedure-img">
-                        <img src="viv-aortico.jpg" alt="VIV Aórtico" style="width:100%; height:100%; object-fit:cover;">
-                    </div>
                     <div class="procedure-body">
                         <h3>VIV Aórtico (Valve-in-Valve)</h3>
                         <p>Implante de uma nova válvula transcateter no interior de uma bioprótese aórtica cirúrgica antiga desgastada, evitando os riscos de uma reoperação aberta.</p>
@@ -291,9 +268,6 @@
 
                 <!-- 12. VIV Mitral (Valve-in-Valve Mitral) -->
                 <div class="procedure-card">
-                    <div class="procedure-img">
-                        <img src="viv-mitral.jpg" alt="VIV Mitral" style="width:100%; height:100%; object-fit:cover;">
-                    </div>
                     <div class="procedure-body">
                         <h3>VIV Mitral (Valve-in-Valve)</h3>
                         <p>Tratamento percutâneo para substituir uma bioprótese mitral desgastada, posicionando uma nova válvula transcateter dentro da prótese pré-existente via acesso venoso.</p>
